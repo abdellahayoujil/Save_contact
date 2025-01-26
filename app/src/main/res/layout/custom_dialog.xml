@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/btn_shape"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/customName"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+        <EditText
+            android:id="@+id/customNumber"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Number"
+            android:inputType="number"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:drawableLeft="@drawable/baseline_contact_phone_24"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+
+        <EditText
+            android:id="@+id/customEmail"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+
+        <EditText
+            android:id="@+id/customAdresse"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+
+        <Button
+            android:id="@+id/customBtn"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Save"
+            android:background="@drawable/btn_shape"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:layout_marginBottom="20dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:textColor="@color/blue_normal_deep"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

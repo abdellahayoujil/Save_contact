@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="12dp"
+    android:padding="10dp"
+    android:layout_marginBottom="8dp"
+    android:layout_height="180dp">
+
+
+    <LinearLayout
+        android:background="@drawable/btn_shape"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvName"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/deep_blue"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:text="Mohammad Atik"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="#094A5F"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:text="01870571988"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#094A5F"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:text="email@gmail.com"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvAd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#094A5F"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:text="35 rue qt ville"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:weightSum="2"
+            android:layout_weight="1.9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+
+            <TextView
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/update"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/deep_blue"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:text="Update"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/ed_shape"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <TextView
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/delete"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/deep_blue"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:text="Delete"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/ed_shape"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
