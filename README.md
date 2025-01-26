@@ -25,7 +25,7 @@ Build and run the app on an Android device or emulator.
 Technologies Used
 Programming Language: Java
 IDE: Android Studio
-Storage: SQLite (or any chosen storage solution, update if necessary)
+Storage: SQLite
 How to Contribute
 Fork the repository.
 Create a new branch:
