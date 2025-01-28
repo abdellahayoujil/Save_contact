@@ -67,4 +67,11 @@ public class Db_save extends SQLiteOpenHelper {
 
         sqLiteDatabase.update("save_table",contentValues,"id=?",new String[]{id});
     }
+
+    public Cursor searchByName(String searchName) {
+        SQLiteDatabase database = this.getReadableDatabase();
+        String query = "SELECT * FROM save_table WHERE name LIKE ? ORDER BY name ASC";
+        String[] selectionArgs = new String[]{"%" + searchName + "%"};
+        return database.rawQuery(query, selectionArgs);
+    }
 }

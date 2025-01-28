@@ -22,7 +22,7 @@
         android:inputType="textPersonName"
         android:textColor="@color/deep_blue"
         android:textColorHint="@color/deep_blue"
-        android:drawableRight="@drawable/baseline_person_24"
+        android:drawableRight="@drawable/search_icon"
         android:layout_width="match_parent"
         android:layout_height="55dp"/>
 
@@ -32,8 +32,21 @@
         android:id="@+id/recyclerView"
         android:layout_height="wrap_content"/>
 
-
-
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:text="No contacts found\nTap + to add a new contact"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:drawableTop="@drawable/baseline_contacts_24"
+        android:drawablePadding="16dp"
+        android:padding="24dp"
+        android:background="@drawable/empty_state"/>
 
 
 

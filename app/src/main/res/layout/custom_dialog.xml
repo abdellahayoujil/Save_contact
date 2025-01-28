@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/btn_shape"
     android:layout_width="match_parent"
@@ -40,7 +41,7 @@
             android:layout_marginTop="12dp"
             android:paddingLeft="10dp"
             android:hint="Enter Number"
-            android:inputType="number"
+            android:inputType="phone"
             android:textColor="@color/deep_blue"
             android:textColorHint="@color/deep_blue"
             android:drawableLeft="@drawable/baseline_contact_phone_24"
@@ -77,24 +78,24 @@
             android:inputType="textEmailAddress"
             android:textColor="@color/deep_blue"
             android:textColorHint="@color/deep_blue"
-            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawableLeft="@drawable/address_icon"
             android:layout_width="match_parent"
             android:layout_height="55dp"/>
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/customBtn"
             android:textSize="16sp"
             android:textStyle="bold"
             android:text="Save"
-            android:background="@drawable/btn_shape"
+            android:background="@drawable/btn"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="30dp"
             android:clickable="true"
             android:layout_marginBottom="20dp"
-            android:foreground="?attr/selectableItemBackground"
-            android:textColor="@color/blue_normal_deep"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
             android:layout_width="match_parent"
             android:layout_height="55dp"/>
 

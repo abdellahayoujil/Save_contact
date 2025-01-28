@@ -4,7 +4,10 @@
     <solid android:color="@color/deep_blue"/>
 
     <corners
-        android:bottomLeftRadius="120dp"/>
+        android:bottomLeftRadius="120dp"
+        android:bottomRightRadius="120dp"/>
+
+
 
 
 

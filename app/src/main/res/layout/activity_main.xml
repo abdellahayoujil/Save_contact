@@ -8,166 +8,141 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <RelativeLayout
-        android:id="@+id/relative"
-        android:background="@drawable/shape"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="250dp">
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:fillViewport="true">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="140dp"
+                android:src="@drawable/baseline_contacts_24"
+                android:layout_centerInParent="true"
+                android:layout_height="140dp"/>
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:src="@drawable/baseline_contacts_24"
-            android:layout_centerInParent="true"
-            android:layout_height="80dp"/>
+            <TextView
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:text="Save Contact"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/imageView"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
 
+        <LinearLayout
+            android:layout_below="@id/relative"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="18sp"
+            <EditText
+                android:id="@+id/edName"
+                android:background="@drawable/ed_shape"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/deep_blue"
+                android:textColorHint="@color/deep_blue"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+            <EditText
+                android:id="@+id/edNumber"
+                android:background="@drawable/ed_shape"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter Number"
+                android:inputType="phone"
+                android:textColor="@color/deep_blue"
+                android:textColorHint="@color/deep_blue"
+                android:drawableLeft="@drawable/baseline_contact_phone_24"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:background="@drawable/ed_shape"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/deep_blue"
+                android:textColorHint="@color/deep_blue"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+            <EditText
+                android:id="@+id/edAd"
+                android:background="@drawable/ed_shape"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter Adresse "
+                android:inputType="textEmailAddress"
+                android:textColor="@color/deep_blue"
+                android:textColorHint="@color/deep_blue"
+                android:drawableLeft="@drawable/address_icon"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addBtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="ADD"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:background="@drawable/btn"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
-            android:text="Save Contact"
-            android:layout_marginTop="10dp"
-            android:layout_centerInParent="true"
-            android:layout_below="@id/imageView"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/floatingId"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/list_icon"
+            app:backgroundTint="#FAF4EC"
+            app:tint="@color/deep_blue"/>
 
-
-
-
-
-
-    </RelativeLayout>
-
-
-    <LinearLayout
-        android:layout_below="@id/relative"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-
-
-
-
-
-        <EditText
-            android:id="@+id/edName"
-            android:background="@drawable/ed_shape"
-            android:drawablePadding="10dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="30dp"
-            android:paddingLeft="10dp"
-            android:hint="Enter Name"
-            android:inputType="textPersonName"
-            android:textColor="@color/deep_blue"
-            android:textColorHint="@color/deep_blue"
-            android:drawableLeft="@drawable/baseline_person_24"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"/>
-
-        <EditText
-            android:id="@+id/edNumber"
-            android:background="@drawable/ed_shape"
-            android:drawablePadding="10dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="12dp"
-            android:paddingLeft="10dp"
-            android:hint="Enter Number"
-            android:inputType="number"
-            android:textColor="@color/deep_blue"
-            android:textColorHint="@color/deep_blue"
-            android:drawableLeft="@drawable/baseline_contact_phone_24"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"/>
-
-
-        <EditText
-            android:id="@+id/edEmail"
-            android:background="@drawable/ed_shape"
-            android:drawablePadding="10dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="12dp"
-            android:paddingLeft="10dp"
-            android:hint="Enter Email"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/deep_blue"
-            android:textColorHint="@color/deep_blue"
-            android:drawableLeft="@drawable/baseline_email_24"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"/>
-
-        <EditText
-            android:id="@+id/edAd"
-            android:background="@drawable/ed_shape"
-            android:drawablePadding="10dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="12dp"
-            android:paddingLeft="10dp"
-            android:hint="Enter Adresse "
-            android:inputType="textEmailAddress"
-            android:textColor="@color/deep_blue"
-            android:textColorHint="@color/deep_blue"
-            android:drawableLeft="@drawable/baseline_email_24"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"/>
-
-
-
-        <Button
-            android:id="@+id/addBtn"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:text="ADD"
-            android:background="@drawable/btn_shape"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="30dp"
-            android:clickable="true"
-            android:layout_marginBottom="10dp"
-            android:foreground="?attr/selectableItemBackground"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"/>
-
-
-
-
-
-
-
-
-
-    </LinearLayout>
-
-
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        app:backgroundTint="@color/blue_white"
-        android:id="@+id/floatingId"
-        app:tint="@color/deep_blue"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
-        android:layout_marginRight="40dp"
-        android:src="@drawable/baseline_recycling_24"
-        android:layout_height="wrap_content"/>
-
-
-
-
-
-
-
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
