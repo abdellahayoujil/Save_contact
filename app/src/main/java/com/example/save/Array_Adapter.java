@@ -3,6 +3,8 @@ package com.example.save;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -141,16 +143,28 @@ public class Array_Adapter extends RecyclerView.Adapter<Array_Adapter.Viewholder
                         .setIcon(android.R.drawable.ic_dialog_alert)
                         .show();
 
-
-
-
-
-
-
-
             }
         });
 
+
+
+        holder.copy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Class_save item = save_ArrayList.get(holder.getAdapterPosition());
+                String textToCopy = "Name: " + item.getName() + "\n" +
+                        "Phone: " + item.getNumber() + "\n" +
+                        "Email: " + item.getEmail() + "\n" +
+                        "Address: " + item.getAdresse();
+
+                ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("Contact Details", textToCopy);
+                clipboard.setPrimaryClip(clip);
+
+                // Show toast message
+                Toast.makeText(context, "Contact details copied to clipboard", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
@@ -161,8 +175,9 @@ public class Array_Adapter extends RecyclerView.Adapter<Array_Adapter.Viewholder
 
     public class Viewholder extends RecyclerView.ViewHolder {
 
+
         TextView name,number,email,adresse;
-        TextView delete,update;
+        TextView delete,update,copy;
 
         public Viewholder(@NonNull View itemView) {
             super(itemView);
@@ -173,6 +188,7 @@ public class Array_Adapter extends RecyclerView.Adapter<Array_Adapter.Viewholder
             adresse =itemView.findViewById(R.id.tvAd);
             delete = itemView.findViewById(R.id.delete);
             update = itemView.findViewById(R.id.update);
+            copy = itemView.findViewById(R.id.copy);
 
 
 
