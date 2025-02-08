@@ -37,7 +37,7 @@ public class Recyclerview extends AppCompatActivity {
 
         edName = findViewById(R.id.edName);
         recyclerView = findViewById(R.id.recyclerView);
-        emptyView = findViewById(R.id.emptyView); // Initialize empty view
+        emptyView = findViewById(R.id.emptyView);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         db_Save = new Db_save(this);
@@ -73,7 +73,6 @@ public class Recyclerview extends AppCompatActivity {
             emptyView.setVisibility(View.GONE);
         }
     }
-
     private void loadAllData() {
         arrayList.clear();
         Cursor cursor = db_Save.showData();
