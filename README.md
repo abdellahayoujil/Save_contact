@@ -16,12 +16,12 @@ Clean and user-friendly interface.
 
 
 Screenshot:
-[!Image Alt](https://github.com/abdellahayoujil/Save_contact/blob/8161f030cb7a57087d12d3f40537730db1468d8c/S1.jpg)
-[!Image Alt](https://github.com/abdellahayoujil/Save_contact/blob/f04d8faae369620c691030916c872c01cdc0d7a2/S3.jpg)
-[!Image Alt](https://github.com/abdellahayoujil/Save_contact/blob/778aafb66160f3ff00702c66685b4179c199e10d/S4.jpg)
-[!Image Alt](https://github.com/abdellahayoujil/Save_contact/blob/f27ce8ec53edf4aeb491805898d601e8cf2aba4f/S5.jpg)
-[!Image Alt](https://github.com/abdellahayoujil/Save_contact/blob/22381672db9b943e282b57d062374328e010b27d/S6.jpg)
-[!Image Alt](https://github.com/abdellahayoujil/Save_contact/blob/abb831586e2e7a9f20521140c03ee5d9037fe23e/S7.jpg)
+[!Image Alt1](https://github.com/abdellahayoujil/Save_contact/blob/8161f030cb7a57087d12d3f40537730db1468d8c/S1.jpg)
+[!Image Alt2](https://github.com/abdellahayoujil/Save_contact/blob/f04d8faae369620c691030916c872c01cdc0d7a2/S3.jpg)
+[!Image Alt3](https://github.com/abdellahayoujil/Save_contact/blob/778aafb66160f3ff00702c66685b4179c199e10d/S4.jpg)
+[!Image Alt4](https://github.com/abdellahayoujil/Save_contact/blob/f27ce8ec53edf4aeb491805898d601e8cf2aba4f/S5.jpg)
+[!Image Alt5](https://github.com/abdellahayoujil/Save_contact/blob/22381672db9b943e282b57d062374328e010b27d/S6.jpg)
+[!Image Alt6](https://github.com/abdellahayoujil/Save_contact/blob/abb831586e2e7a9f20521140c03ee5d9037fe23e/S7.jpg)
 
 
 Installation
