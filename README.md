@@ -14,6 +14,10 @@ Delete unwanted contacts.
 View a list of all saved contacts in an organized layout.
 Clean and user-friendly interface.
 
+
+Screenshot:
+[!Image Alt](https://github.com/abdellahayoujil/Save_contact/blob/8161f030cb7a57087d12d3f40537730db1468d8c/S1.jpg)
+
 Installation
 Clone this repository to your local machine:
 bash
