@@ -27,7 +27,9 @@ public class Recyclerview extends AppCompatActivity {
     ArrayList<Class_save> arrayList = new ArrayList<>();
     Db_save db_Save;
     Array_Adapter adapter;
-    TextView emptyView; // Add this
+    TextView emptyView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,10 +48,9 @@ public class Recyclerview extends AppCompatActivity {
         adapter = new Array_Adapter(arrayList,this);
         recyclerView.setAdapter(adapter);
 
-        loadAllData(); // Load initial data
-        checkIfEmpty(); // Check if data is empty
+        loadAllData();
+        checkIfEmpty();
 
-        // Add TextWatcher for search functionality
         edName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
@@ -87,7 +88,7 @@ public class Recyclerview extends AppCompatActivity {
         }
         cursor.close();
         adapter.notifyDataSetChanged();
-        checkIfEmpty(); // Check after loading data
+        checkIfEmpty();
     }
 
     private void searchData(String searchText) {
@@ -104,7 +105,7 @@ public class Recyclerview extends AppCompatActivity {
         }
         cursor.close();
         adapter.notifyDataSetChanged();
-        checkIfEmpty(); // Check after searching
+        checkIfEmpty();
     }
     @Override
     public void onBackPressed() {
