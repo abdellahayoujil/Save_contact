@@ -1,7 +1,7 @@
-📱 Save Contact
+## 📱 Save Contact
 
 
-Save Contact is a simple, secure, and efficient Android application built using Java in Android Studio. It allows users to easily store, manage, and view personal contact details, including:
+**Save Contact** is a simple, secure, and efficient Android application built using Java in Android Studio. It allows users to easily store, manage, and view personal contact details, including:
 
 👤 Name
 
@@ -15,7 +15,7 @@ Save Contact is a simple, secure, and efficient Android application built using 
 Designed with a clean and user-friendly interface, the app is ideal for anyone who wants a lightweight alternative to bulky contact managers.
 
 
-✨ Features
+## ✨ Features
 🎨 Clean and user-friendly UI
 
 📝 Add new contacts with ease
@@ -29,7 +29,7 @@ Designed with a clean and user-friendly interface, the app is ideal for anyone w
 ❌ Delete contacts
 
 
-📸 Screenshots
+## 📸 Screenshots
 
 [!Image Alt1](https://github.com/abdellahayoujil/Save_contact/blob/8161f030cb7a57087d12d3f40537730db1468d8c/S1.jpg)
 [!Image Alt2](https://github.com/abdellahayoujil/Save_contact/blob/f04d8faae369620c691030916c872c01cdc0d7a2/S3.jpg)
@@ -40,7 +40,7 @@ Designed with a clean and user-friendly interface, the app is ideal for anyone w
 
 
 
-🧰 Tech Stack
+## 🧰 Tech Stack
 
 
 Language: Java
@@ -55,7 +55,7 @@ Design: XML-based layouts with custom drawable backgrounds
 
 
 
-📂 Project Structure Highlights
+## 📂 Project Structure Highlights
 
 📁 java/com.example.savecontact
  ┣ 📄 MainActivity.java
@@ -70,7 +70,7 @@ Design: XML-based layouts with custom drawable backgrounds
  ┗ 📄 update_dialog.xml
 
 
- 🚀 Getting Started
+## 🚀 Getting Started
  
 Prerequisites
 
@@ -88,7 +88,7 @@ Build and run on an emulator or a physical device.
 
 
 
-📌 Future Improvements
+## 📌 Future Improvements
 
 🔐 Add secure local storage using Room or SQLite
 
@@ -99,6 +99,6 @@ Build and run on an emulator or a physical device.
 🌓 Dark mode support
 
 
-👤 Author
+## 👤 Author
 
 Made with ❤️ by [Abdellah Ayoujil](https://github.com/abdellahayoujil)
