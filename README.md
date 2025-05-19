@@ -80,7 +80,7 @@ Android SDK 21+
 
 Java Development Kit (JDK)
 
-git clone https://github.com/yourusername/save-contact-app.git
+git clone https://github.com/abdellahayoujil/save-contact-app.git
 
 Open the project in Android Studio.
 
